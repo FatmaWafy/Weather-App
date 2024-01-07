@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="landing">
+      <div class="overlay">
+        <div class="container">
+          <div class="search">
+            <input
+              type="text"
+              placeholder="City Name .. "
+              spellcheck="false"
+              autocomplete="off"
+            />
+            <input type="submit" value="Search" />
+          </div>
+          <div class="weather">
+            <div class="main-box">
+              <div class="main">
+                <h1 class="temp"></h1>
+                <h2 class="city"></h2>
+              </div>
+              <div class="details">
+                <div class="col">
+                  <div>
+                    <img src="" class="img" alt="" />
+                    <p class="text"></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <p class="humidity"></p>
+                    <p>Humidity</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <p class="wind"></p>
+                    <p>Wind spead</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <p class="Feels-like"></p>
+                    <p>Feels like</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- only 3 days forecast because the API provides only 3 days of data -->
+            <div class="boxs">
+              <div class="box">
+                <h3 class="date"></h3>
+                <div class="forecast">
+                  <div>
+                    <p class="maxTemp"></p>
+                    <p class="minTemp"></p>
+                    <p class="sunrise"></p>
+                    <p class="sunset"></p>
+                  </div>
+                  <p class="condition"></p>
+                </div>
+              </div>
+              <div class="box">
+                <h3 class="date"></h3>
+                <div class="forecast">
+                  <div>
+                    <p class="maxTemp"></p>
+                    <p class="minTemp"></p>
+                    <p class="sunrise"></p>
+                    <p class="sunset"></p>
+                  </div>
+                  <p class="condition"></p>
+                </div>
+              </div>
+              <div class="box">
+                <h3 class="date"></h3>
+                <div class="forecast">
+                  <div>
+                    <p class="maxTemp"></p>
+                    <p class="minTemp"></p>
+                    <p class="sunrise"></p>
+                    <p class="sunset"></p>
+                  </div>
+                  <p class="condition"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
